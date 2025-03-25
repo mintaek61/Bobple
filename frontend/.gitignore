@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 resources/application.yml
+
+# .env 파일 무시
+.env

@@ -5,6 +5,8 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.maven.apache.org/maven2' }
+    maven { url 'https://jcenter.bintray.com/' }
 }
 
 // 프로젝트 의존성 설정
@@ -26,7 +28,7 @@ dependencies {
 
 
     // MySQL 데이터베이스 드라이버
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    runtimeOnly 'mysql:mysql-connector-java:8.0.30'
 
     // OAuth2 및 Spring Security (인증/인가)
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
